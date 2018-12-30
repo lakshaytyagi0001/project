@@ -1,8 +1,21 @@
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-const App = () => (
-    <Text>some text</Text>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>LAKSHAY TYAGI</Text>
+      </View>
+    );
+  }
+}
 
-AppRegistry.registerComponent('project', () => App);
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0ff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
